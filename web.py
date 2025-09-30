@@ -64,7 +64,7 @@ if st.button("Chạy xử lý"):
                     # Lưu vào zip
                     img_bytes = io.BytesIO()
                     final_img.save(img_bytes, format="JPEG", quality=95)
-                    out_zip.writestr(f"processed_{file.name}", img_bytes.getvalue())
+                    out_zip.writestr(f"{file.name}", img_bytes.getvalue())
 
             result_buffer.seek(0)
 
